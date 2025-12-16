@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumaah's Site | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Ionicons for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <ion-icon name="code-slash-outline" class="logo-icon"></ion-icon>
+            <span class="logo-text">JUMAAH'S SITE</span>
+        </div>
+        <nav class="nav">
+            <a href="#home" class="nav-link">HOME</a>
+            <a href="#about" class="nav-link">ABOUT</a>
+            <a href="#projects" class="nav-link">PROJECTS</a>
+            <a href="#contact" class="btn btn-outline">CONTACT ↗</a>
+        </nav>
+        <button class="mobile-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-image-wrapper">
+                    <!-- Decorative Background element -->
+                    <div class="bg-shape"></div>
+                    <!-- Main Image Frame -->
+                    <div class="image-frame">
+                        <img src="img/portrait1.png" alt="Jumaah's Portrait" class="profile-img">
+                    </div>
+                    <!-- Decorative Star -->
+                    <div class="star-shape">
+                        <svg viewBox="0 0 100 100" fill="currentColor">
+                            <path d="M50 0 L65 35 L100 50 L65 65 L50 100 L35 65 L0 50 L35 35 Z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="hero-content">
+                    <h1 class="headline">Hi,<br>I'm Jumaah!</h1>
+                    <div class="description-box">
+                        <div class="vertical-line"></div>
+                        <p>
+                            Informatics student.
+                            Interested in web and mobile development and some UI/UX design.
+                        </p>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <span class="pill">PYTHON</span>
+                        <span class="pill">JAVASCRIPT</span>
+                        <span class="pill">HTML</span>
+                        <span class="pill">CSS</span>
+                    </div>
+
+                    <div class="cta-group">
+                        <a href="#projects" class="btn btn-primary">VIEW WORK</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Placeholder for About/Projects Section to allow scrolling -->
+        <section id="about" class="section-placeholder">
+            <h2>About</h2>
+            <p>My name is Jumaah Al Rasyid. 3rd semester Informatics student at Universitas Hamzanwadi.</p>
+            <p>Based in Selong, Lombok Timur, Indonesia.</p>
+            <p>Currently, I'm learning web development framework such as React.js.</p>
+        </section>
+
+        <!-- Placeholder for About/Projects Section to allow scrolling -->
+        <section id="projects" class="section-placeholder">
+            <h2>Projects</h2>
+            <p>Content coming soon...</p>
+        </section>
+        
+         <!-- Placeholder for Contact -->
+         <section id="contact" class="section-placeholder">
+            <h2>Contact</h2>
+            <p>Get in touch!</p>
+            <div class="social-links" style="justify-content: center; margin-top: 1rem;">
+                <a href="https://github.com/diysarj" target="_blank" class="icon-btn"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="mailto:jrsyd14@gmail.com" target="_blank" class="icon-btn"><ion-icon name="mail-outline"></ion-icon></a>
+                <a href="https://www.instagram.com/" target="_blank" class="icon-btn"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="copyright">© 2025 JUMAAH PORTFOLIO</div>
+        <div class="availability">
+            <span class="status-dot"></span> AVAILABLE FOR PROJECTS
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
