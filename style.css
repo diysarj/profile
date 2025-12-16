@@ -1,10 +1,8 @@
 :root {
     --bg-color: #f2f0ea;
-    --accent-purple: #c4b5fd;
-    --accent-green: #d9f99d;
-    /* Lime green */
-    --accent-yellow: #fde047;
-    /* Star yellow-greenish */
+    --accent-purple: #92a9ec;
+    --accent-yellow: #f8cb46;
+
     --text-color: #0d0d0d;
     --border-color: #000000;
     --border-width: 3px;
@@ -62,7 +60,7 @@ body {
 }
 
 .btn-primary {
-    background-color: #dafa78;
+    background-color: var(--accent-yellow);
     /* Specific lime from design */
     color: var(--text-color);
     box-shadow: var(--shadow-hard);
@@ -132,7 +130,7 @@ body {
 .nav-link:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-decoration-color: var(--accent-green);
+    text-decoration-color: var(--accent-yellow);
 }
 
 .mobile-menu-btn {
@@ -381,5 +379,4 @@ body {
 .section-placeholder {
     padding: 4rem 2rem;
     text-align: center;
-    border-top: var(--border-width) solid var(--border-color);
 }
