@@ -1,6 +1,3 @@
-// Basic Script
-console.log("Welcome to Olivia's Portfolio!");
-
 // Simple Mobile Menu Toggle (to be expanded if needed)
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const nav = document.querySelector('.nav');
@@ -8,6 +5,7 @@ const nav = document.querySelector('.nav');
 if(mobileMenuBtn) {
     mobileMenuBtn.addEventListener('click', () => {
         nav.classList.toggle('active');
+        mobileMenuBtn.classList.toggle('active');
         
         // Toggle icon between menu and close
         const icon = mobileMenuBtn.querySelector('ion-icon');
@@ -22,6 +20,7 @@ if(mobileMenuBtn) {
     document.querySelectorAll('.nav-link, .btn-outline').forEach(item => {
         item.addEventListener('click', () => {
             nav.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
             const icon = mobileMenuBtn.querySelector('ion-icon');
             if(icon) icon.setAttribute('name', 'menu-outline');
         });
