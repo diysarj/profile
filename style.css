@@ -437,3 +437,191 @@ body {
 .delay-500 {
     animation-delay: 0.5s;
 }
+
+/* Projects Section */
+.projects-section {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+/* Underline effect */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 8px;
+    background-color: var(--accent-yellow);
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    z-index: -1;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.projects-grid {
+    display: grid;
+    /* Changed from 1fr to 380px to prevent single cards from stretching too wide */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 380px));
+    gap: 2.5rem;
+    justify-content: center;
+    /* Center the cards in the container */
+}
+
+/* Neo-Brutalist Card */
+.project-card {
+    background-color: var(--white);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow-hard);
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0 0 var(--border-color);
+}
+
+.card-image-wrapper {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-bottom: var(--border-width) solid var(--border-color);
+    overflow: hidden;
+}
+
+.img-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+}
+
+.img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card:hover .img-placeholder {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    background-color: #ff4d00;
+    /* Default light pink */
+    box-shadow: 2px 2px 0 0 var(--border-color);
+}
+
+/* Vary tag colors */
+.tag:nth-child(2n) {
+    background-color: #9d00ff;
+    /* Light blue */
+}
+
+.tag:nth-child(3n) {
+    background-color: #f0db4f;
+    /* Light green */
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    /* Push footer down */
+}
+
+.card-footer {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: auto;
+}
+
+/* Small Button variants */
+.btn-sm {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--accent-yellow);
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    box-shadow: 3px 3px 0 0 var(--border-color);
+    transition: all 0.2s;
+}
+
+.btn-sm:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0 0 var(--border-color);
+}
+
+
+.btn-outline-sm {
+    background-color: var(--white);
+    /* Inherit shadow from btn-sm */
+}
+
+.btn-outline-sm:hover {
+    background-color: #f3f4f6;
+    /* Light gray on hover */
+    /* Inherit transform and shadow reduction from .btn-sm:hover */
+}
