@@ -80,6 +80,33 @@ body {
     font-weight: 700;
     font-size: 0.85rem;
     box-shadow: 2px 2px 0 0 var(--border-color);
+    transition: all 0.2s ease;
+}
+
+.pill:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0 0 var(--border-color);
+    cursor: default;
+}
+
+.pill-python:hover {
+    background: linear-gradient(90deg, #346F9E, #ffd03c);
+    color: var(--white);
+}
+
+.pill-js:hover {
+    background-color: #f0db4f;
+    /* JS yellow is usually dark text, keeping default or explicit black? Default is text-color #0d0d0d which is fine. */
+}
+
+.pill-html:hover {
+    background-color: #ff4d00;
+    color: var(--white);
+}
+
+.pill-css:hover {
+    background-color: #9d00ff;
+    color: var(--white);
 }
 
 /* Header */
@@ -272,6 +299,7 @@ body {
     flex-wrap: wrap;
     gap: 1rem;
     margin: 1rem 0;
+    justify-content: center;
 }
 
 .cta-group {
@@ -284,6 +312,8 @@ body {
 .social-links {
     display: flex;
     gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 .icon-btn {
@@ -393,10 +423,7 @@ body {
     }
 }
 
-.section-placeholder {
-    padding: 4rem 2rem;
-    text-align: center;
-}
+
 
 /* Page Load Animations */
 @keyframes fadeInUp {
@@ -438,15 +465,15 @@ body {
     animation-delay: 0.5s;
 }
 
-/* Projects Section */
-.projects-section {
+/* Sections */
+.content-section {
     padding: 6rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .section-header {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 
@@ -467,8 +494,8 @@ body {
     height: 8px;
     background-color: var(--accent-yellow);
     position: absolute;
-    bottom: 5px;
-    left: 5px;
+    bottom: 1px;
+    left: 1px;
     z-index: -1;
 }
 
@@ -624,4 +651,25 @@ body {
     background-color: #f3f4f6;
     /* Light gray on hover */
     /* Inherit transform and shadow reduction from .btn-sm:hover */
+}
+
+/* About Section Specifics */
+.about-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.about-bio {
+    margin-bottom: 0.2rem;
+}
+
+.about-status {
+    margin-bottom: 1.5rem;
+}
+
+.tech-stack-label {
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
