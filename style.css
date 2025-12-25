@@ -590,19 +590,17 @@ body {
     border: 2px solid var(--border-color);
     border-radius: 20px;
     background-color: #ff4d00;
-    /* Default light pink */
     box-shadow: 2px 2px 0 0 var(--border-color);
 }
 
 /* Vary tag colors */
 .tag:nth-child(2n) {
     background-color: #9d00ff;
-    /* Light blue */
+    color: var(--white);
 }
 
 .tag:nth-child(3n) {
     background-color: #f0db4f;
-    /* Light green */
 }
 
 .project-desc {
